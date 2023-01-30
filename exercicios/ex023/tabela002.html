@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -28,9 +29,16 @@
         }
     
         thead, tfoot {
-            background-color: gray;
+            background-color: #383838;
             color: white;
         }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
         tbody > tr:nth-child(odd) { /* 2n-1 */
             background-color: white;
         }
@@ -183,5 +191,6 @@
 
         </tbody>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam aut numquam, vero iusto nam officia ad? Nisi, ipsum debitis fuga esse distinctio officiis iusto cumque corrupti magni, quis voluptatum quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quidem. Sapiente amet consequuntur placeat perferendis quis aperiam similique, hic molestiae mollitia optio ex ea recusandae iusto dignissimos et necessitatibus. Autem! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste perferendis praesentium culpa debitis quae explicabo quos dignissimos veritatis saepe! Ipsam animi cupiditate sunt nobis ratione provident architecto atque commodi cumque? </p>
 </body>
 </html>
